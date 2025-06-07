@@ -1,0 +1,35 @@
+{
+  "name": "gemini_cli",
+  "version": "1.0.0",
+  "description": "geminiにコマンドラインから対話可能なツールを作ってください。 一度プロセスを実行するとclaude codeのようにチャット形式で入力できるようにしてください。 使用する言語は何でも構いません。こだわりがなければTypeScriptで作成してください。",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gemini-cli": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuroponzu/gemini_cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuroponzu/gemini_cli/issues"
+  },
+  "homepage": "https://github.com/kuroponzu/gemini_cli#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "commander": "^14.0.0"
+  }
+}
